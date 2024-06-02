@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" class="input-search" id="input-search" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát "/>
+            <button id="tim" class="tim"><ion-icon name="search-outline"></ion-icon></button>
+        </div>
+        <nav>
+            <div class="side-bar">
+                <div>
+                    <img src="./img/logo.png" class="img-logo">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><span><i class="far fa-star"></i></span>   Top 100</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: white" ><span><i class="far fa-list-alt"></i></span> Playlist
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fa fa-music"></i></span> Album</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fas fa-history"></i></span> Đã nghe gần đây</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div class="body-music">
+            <div class="img-music">
+                <img src="./img/1.jpg" class="img-img">
+            </div>
+                <h3 class="song-name">Ly hôn ở cộng hòa Gaha</h3>
+                <h4 class="artist">Ca sĩ</h4>
+                <input type="range" name="range" id="range-time" class="range-time">
+            <audio src="./song/1.mp3" id="song"></audio>
+            <div class="time">
+                <div class="remaining">00:00</div>
+                <div class="duration">00:00</div>
+            </div>
+            <div class="controls">
+                <ion-icon name="play-back" class="btn-prev"></ion-icon>
+
+                    <div class="play-pasue">
+                    <ion-icon name="play" class="btn-play"></ion-icon>
+                    </div>
+
+                <ion-icon name="play-forward" class="btn-forward"></ion-icon>
+            </div>
+        </div>
+        <div class="body-list">
+                <ul id="music-list" class="music-list"></ul>
+        </div>
+        <div class="body-playlist" id="select-mysong">
+
+        </div>
+
+    </div>
+<script src="mp3.js"></script>
+
+</body>
+</html>
